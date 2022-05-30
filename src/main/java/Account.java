@@ -7,11 +7,11 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        if (name.length() >= 3 &&
+        if (name != null && name.length() >= 3 &&
                 name.length() <= 19 &&
                 name.contains(" ") &&
                 !name.startsWith(" ") &&
-                !name.endsWith(" ") && name != null) {
+                !name.endsWith(" ")) {
             return true;
         }
         return false;
